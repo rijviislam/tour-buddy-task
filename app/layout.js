@@ -1,14 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inria_Serif, Mulish } from "next/font/google";
 import "./globals.css";
+import Navbar from "./shared/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inriaSerif = Inria_Serif({
+  variable: "--font-inria-serif",
   subsets: ["latin"],
+  weight: ["300", "400", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const mulish = Mulish({
+  variable: "--font-mulish",
   subsets: ["latin"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata = {
@@ -19,9 +22,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inriaSerif.variable} ${mulish.variable} antialiased`}>
+        <Navbar/>
         {children}
       </body>
     </html>

@@ -7,6 +7,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mulish: ["Mulish", "sans-serif"],
+        volkhov: ["Volkhov", "serif"],
+        inria: ["Inria Serif", "serif"],
+        mukta: ["Mukta", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
