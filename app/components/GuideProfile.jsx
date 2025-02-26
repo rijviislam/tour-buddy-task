@@ -335,9 +335,9 @@ export default function GuideProfile() {
               <div className="flex flex-col items-end">
                 <div className="flex w-[1140px] gap-[22px] border-b border-[#E8EAEB]">
                   <div className="flex gap-5 items-center justify-center">
-                    <Image src={Pro1} alt="profile" />
+                    <Image src={Pro1} alt="profile" quality={100} />
                     <div className="w-[203px]">
-                      <Image src={Star} alt="review" />
+                      <Image src={Star} alt="review" quality={100} />
                       <div className="flex gap-[5px ] font-mulish font-bold text-[15px] text-[#1C2B38] mt-[6px] mb-[9px]">
                         Arlene McCoy{" "}
                         <svg
@@ -380,9 +380,9 @@ export default function GuideProfile() {
                 </div>
                 <div className="flex w-[1140px] gap-[22px] border-b border-[#E8EAEB]">
                   <div className="flex gap-5 items-center justify-center">
-                    <Image src={Pro} alt="profile" />
+                    <Image src={Pro} alt="profile" quality={100} />
                     <div className="w-[203px]">
-                      <Image src={Star} alt="review" />
+                      <Image src={Star} alt="review" quality={100} />
                       <div className="flex gap-[5px ] font-mulish font-bold text-[15px] text-[#1C2B38] mt-[6px] mb-[9px]">
                         Jenny Wilson{" "}
                         <svg

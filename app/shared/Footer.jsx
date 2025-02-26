@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="bg-[#13253F] w-full h-[418px]">
       <div className="pt-[88px] flex justify-around">
         <div className="">
-          <Image src={Logo} alt="Footer Logo" />
+          <Image src={Logo} alt="Footer Logo" quality={100} />
           <div className="flex flex-col gap-10 mt-[30px] ml-10">
             <div className="relative w-[210px]">
               <select className="w-full h-[46px] bg-transparent border border-[#FFFFFF33] text-[#FFFFFF99] text-[14px] font-mulish pl-5  outline-none appearance-none">
@@ -137,16 +137,16 @@ export default function Footer() {
           </h2>
           <div className="mt-10">
             <div className="flex gap-[5px]">
-              <Image src={PaymentMethod1} alt="payment method" />
-              <Image src={PaymentMethod2} alt="payment method" />
-              <Image src={PaymentMethod3} alt="payment method" />
-              <Image src={PaymentMethod4} alt="payment method" />
+              <Image src={PaymentMethod1} alt="payment method" quality={100} />
+              <Image src={PaymentMethod2} alt="payment method" quality={100} />
+              <Image src={PaymentMethod3} alt="payment method" quality={100} />
+              <Image src={PaymentMethod4} alt="payment method" quality={100} />
             </div>
             <div className="flex gap-[5px] mt-[5px]">
-              <Image src={PaymentMethod5} alt="payment method" />
-              <Image src={PaymentMethod7} alt="payment method" />
-              <Image src={PaymentMethod8} alt="payment method" />
-              <Image src={PaymentMethod9} alt="payment method" />
+              <Image src={PaymentMethod5} alt="payment method" quality={100} />
+              <Image src={PaymentMethod7} alt="payment method" quality={100} />
+              <Image src={PaymentMethod8} alt="payment method" quality={100} />
+              <Image src={PaymentMethod9} alt="payment method" quality={100} />
             </div>
           </div>
           <p className="text-[15px] mt-4 text-[#FFFFFF99] font-mulish font-normal">
@@ -163,6 +163,8 @@ export default function Footer() {
             src={FooterIoon}
             alt="Footer icon"
             className="cursor-pointer"
+            placeholder="blur"
+            quality={100}
           />
         </div>
       </div>

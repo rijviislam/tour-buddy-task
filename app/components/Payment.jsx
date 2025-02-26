@@ -72,7 +72,14 @@ export default function Payment() {
               </div>
             </div>
             <div className="mt-[20px]">
-              <Image src={Pay} width={303} height={248} alt="payment" />
+              <Image
+                src={Pay}
+                width={303}
+                height={248}
+                alt="payment"
+                placeholder="blur"
+                quality={100}
+              />
             </div>
           </div>
           <div className="w-[1070px] mt-12">
@@ -190,7 +197,7 @@ export default function Payment() {
             </div>
           </div>
           <div className="mt-6 mb-10">
-            <Image src={SSL} alt="ssl" />
+            <Image src={SSL} alt="ssl" placeholder="blur" quality={100} />
           </div>
         </div>
       </div>
