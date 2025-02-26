@@ -159,7 +159,11 @@ export default function Footer() {
           Copyright 2025 Tour Buddy. All Rights Reserved
         </p>
         <div>
-          <Image src={FooterIoon} alt="Footer icon" />
+          <Image
+            src={FooterIoon}
+            alt="Footer icon"
+            className="cursor-pointer"
+          />
         </div>
       </div>
     </footer>

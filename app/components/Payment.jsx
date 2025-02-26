@@ -52,7 +52,7 @@ export default function Payment() {
                     <input
                       type="number"
                       placeholder="+8801321454687"
-                      className="bg-[#F4F4F5] h-[54px] outline-none p-5 mt-[10px] text-[#495560] text-sm font-mulish font-semibold"
+                      className="bg-[#F4F4F5] h-[54px] outline-none p-5 mt-[10px] text-[#495560] text-sm font-mulish font-semibold [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                     />
                   </div>
                   <div className="flex flex-col mt-4">

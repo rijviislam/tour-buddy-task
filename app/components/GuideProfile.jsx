@@ -3,6 +3,9 @@ import Pro from "../../public/Ellipse 60 (1).svg";
 import Pro1 from "../../public/Ellipse 60.svg";
 
 import Link from "next/link";
+import { FaPhone } from "react-icons/fa6";
+import { GiGraduateCap } from "react-icons/gi";
+import { HiLocationMarker } from "react-icons/hi";
 import Star from "../../public/Group 229.svg";
 import Profile from "../../public/image.png";
 import Car from "../../public/Vector (1).svg";
@@ -13,11 +16,11 @@ export default function GuideProfile() {
   return (
     <section>
       <div className="w-full flex items-center justify-center ">
-        <div className="mt-[191px] border border-black max-w-[1440px] mx-auto ">
+        <div className="mt-[191px]  max-w-[1440px] mx-auto ">
           <h1 className="text-black ml-[110px] text-xl font-normal leading-6">
             Your Selected Guide:
           </h1>
-          <div className="mt-[68px] flex gap-[110px] border-2 border-black max-w-[1250px]">
+          <div className="mt-[68px] flex gap-[110px] max-w-[1250px]">
             <div className=" bg-[#FFF] shadow-[0px_8px_34px_0px_rgba(0,0,0,0.06)] rounded-[4px] w-[870px] h-[140px] flex gap-5 ">
               <Image
                 src={Profile}
@@ -75,7 +78,7 @@ export default function GuideProfile() {
           {/* Reviews */}
 
           <div className="w-full flex items-center justify-center">
-            <div className=" mt-[38px] w-[1200px] border-2 border-red-600 ">
+            <div className=" mt-[38px] w-[1200px]">
               <div className="flex items-end gap-[42px] ">
                 <h4 className="text-[#1C2B38] font-mulish font-black text-[48px]">
                   4.0
@@ -84,9 +87,9 @@ export default function GuideProfile() {
                   14 Reviews
                 </p>
               </div>
-              <div className="flex justify-between">
+              <div className="flex items-start justify-between">
                 <Image src={Star} width={250} height={50} alt="revivew" />
-                <div className="flex flex-col">
+                <div className="flex flex-col items-end gap-5">
                   <div className="text-[#000000] font-mulish text-[16px] font-normal leading-[30px] w-[359px] h-[100px]  rounded-[33px] bg-[#E6E6E6] text-wrap">
                     <p className="ml-[60px] mt-[26px]">
                       {" "}
@@ -94,14 +97,100 @@ export default function GuideProfile() {
                       20 individuals.
                     </p>
                   </div>
-                  {/* <div className="mt-5">
-                    <div>
-                      <div className="flex gap-1 items-center">
-                        <CiLocationOn />
-                        Dhaka Bangladesh
-                      </div>
+
+                  <div className="bg-[#F9FAFD] w-[459px] h-[100px] rounded-[13px] shadow-md flex flex-wrap p-5 gap-3 ">
+                    <div className="flex items-center gap-3 text-sm font-mulish font-semibold text-[#495560] ">
+                      <GiGraduateCap className="text-[22px] text-[#000]" /> 2
+                      year Expeirence
                     </div>
-                  </div> */}
+                    <div className="flex items-center gap-3 text-sm font-mulish font-semibold text-[#495560]">
+                      <HiLocationMarker className="text-[22px] text-[#000]" />{" "}
+                      Dhaka Bangladesh
+                    </div>
+                    <div className="flex items-center gap-3 text-sm font-mulish font-semibold text-[#495560]">
+                      <FaPhone className="text-[18px] text-[#000]" />
+                      +8801723451144
+                    </div>
+                    <div className="ml-2">
+                      <select
+                        data-placeholder="Choose a Language..."
+                        className="bg-transparent outline-none font-mulish w-[200px]"
+                      >
+                        <option value="AF">Choose a Language</option>
+                        <option value="SQ">Albanian</option>
+                        <option value="AR">Arabic</option>
+                        <option value="HY">Armenian</option>
+                        <option value="EU">Basque</option>
+                        <option value="BN">Bengali</option>
+                        <option value="BG">Bulgarian</option>
+                        <option value="CA">Catalan</option>
+                        <option value="KM">Cambodian</option>
+                        <option value="ZH">Chinese (Mandarin)</option>
+                        <option value="HR">Croatian</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finnish</option>
+                        <option value="FR">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE">German</option>
+                        <option value="EL">Greek</option>
+                        <option value="GU">Gujarati</option>
+                        <option value="HE">Hebrew</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">Hungarian</option>
+                        <option value="IS">Icelandic</option>
+                        <option value="ID">Indonesian</option>
+                        <option value="GA">Irish</option>
+                        <option value="IT">Italian</option>
+                        <option value="JA">Japanese</option>
+                        <option value="JW">Javanese</option>
+                        <option value="KO">Korean</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">Lithuanian</option>
+                        <option value="MK">Macedonian</option>
+                        <option value="MS">Malay</option>
+                        <option value="ML">Malayalam</option>
+                        <option value="MT">Maltese</option>
+                        <option value="MI">Maori</option>
+                        <option value="MR">Marathi</option>
+                        <option value="MN">Mongolian</option>
+                        <option value="NE">Nepali</option>
+                        <option value="NO">Norwegian</option>
+                        <option value="FA">Persian</option>
+                        <option value="PL">Polish</option>
+                        <option value="PT">Portuguese</option>
+                        <option value="PA">Punjabi</option>
+                        <option value="QU">Quechua</option>
+                        <option value="RO">Romanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="SM">Samoan</option>
+                        <option value="SR">Serbian</option>
+                        <option value="SK">Slovak</option>
+                        <option value="SL">Slovenian</option>
+                        <option value="ES">Spanish</option>
+                        <option value="SW">Swahili</option>
+                        <option value="SV">Swedish </option>
+                        <option value="TA">Tamil</option>
+                        <option value="TT">Tatar</option>
+                        <option value="TE">Telugu</option>
+                        <option value="TH">Thai</option>
+                        <option value="BO">Tibetan</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TR">Turkish</option>
+                        <option value="UK">Ukrainian</option>
+                        <option value="UR">Urdu</option>
+                        <option value="UZ">Uzbek</option>
+                        <option value="VI">Vietnamese</option>
+                        <option value="CY">Welsh</option>
+                        <option value="XH">Xhosa</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,7 +198,7 @@ export default function GuideProfile() {
 
           {/* Customer Review */}
           <div className="flex flex-col items-center justify-center">
-            <div className=" mt-[90px] mb-12 max-w-[1170px] border-2 border-red-600 ">
+            <div className=" mt-[90px] mb-12 max-w-[1170px]">
               <h5 className="text-[#1C2B38] font-volkhov font-bold text-[22px]">
                 Customer Review
               </h5>
