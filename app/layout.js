@@ -1,5 +1,6 @@
 import { Inria_Serif, Mulish } from "next/font/google";
 import "./globals.css";
+import Footer from "./shared/Footer";
 import Navbar from "./shared/Navbar";
 
 const inriaSerif = Inria_Serif({
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`${inriaSerif.variable} ${mulish.variable} antialiased`}>
         <Navbar/>
         {children}
-        {/* <Footer/> */}
+        <Footer/>
       </body>
     </html>
   );

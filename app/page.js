@@ -1,11 +1,9 @@
-// import GuideProfile from "./components/GuideProfile";
-import Payment from "./components/Payment";
+import GuideProfile from "./components/GuideProfile";
 
 export default function Home() {
   return (
    <>
-   {/* <GuideProfile/> */}
-   <Payment/>
+   <GuideProfile/>
    </>
   );
 }
