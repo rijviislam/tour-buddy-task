@@ -1,8 +1,11 @@
+// import GuideProfile from "./components/GuideProfile";
+import Payment from "./components/Payment";
 
 export default function Home() {
   return (
-    <div >
-   {/* <h1 className="text-5xl text-black">Rijvi</h1> */}
-    </div>
+   <>
+   {/* <GuideProfile/> */}
+   <Payment/>
+   </>
   );
 }

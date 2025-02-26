@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={`${inriaSerif.variable} ${mulish.variable} antialiased`}>
         <Navbar/>
         {children}
+        {/* <Footer/> */}
       </body>
     </html>
   );
